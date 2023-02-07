@@ -58,7 +58,7 @@ const GetSurvey = () => {
 		};
 		let finalAns = [];
 
-        getSurveyData.survey.questions.map((obj) => {
+        getSurveyData?.survey?.questions.map((obj) => {
             data?.singleChoice.map((singleData, index) => {
                 if (obj.id === index) {
                     finalAns = [
@@ -80,7 +80,7 @@ const GetSurvey = () => {
                 }
             });
 
-            data?.options.map((multipleChoice, index) => {
+            data?.options?.map((multipleChoice, index) => {
                 if (obj.id === index) {
                     const qus = multipleChoice.filter(
                         (data) => data.answer !== false
@@ -108,7 +108,7 @@ const GetSurvey = () => {
                 }
             });
 
-			data?.description.map((description, index) => {
+			data?.description?.map((description, index) => {
 				if (obj.id === index) {
 					finalAns = [
 						...finalAns,

@@ -20,8 +20,8 @@ export const loginAction = createAsyncThunk(
 				throw err;
 			}
 			return rejectWithValue({
-				message: err.response,
-			});
+                message: err.response.data.data.message,
+            });
 		}
 	}
 );

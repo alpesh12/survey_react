@@ -34,7 +34,7 @@ const CloneSurveyPlace = ({ nestIndex, control, register }) => {
 											)}
 											margin="none"
 											required
-											label="Op"
+											label="Options"
 											sx={{ width: "100%" }}
 										/>
 									</Grid>
